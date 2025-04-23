@@ -1,12 +1,75 @@
-# React + Vite
+<div align = center>
+  
+# 📸 Telas do Projeto – Tarefão <img src="https://skillicons.dev/icons?i=react" align="center" /> 
+  
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este documento mostra as principais telas do projeto **Tarefão**, incluindo visualizações, interações e organização dos elementos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📍 Home Page
 
-## Expanding the ESLint configuration
+<div align="center">
+  <img src="#" width="700px" alt="Tela Inicial">
+</div>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<br>
+
+A tela inicial apresenta o cabeçalho do sistema, o formulário de entrada de tarefas e a divisão por fileiras (Escola, Trabalho, Lazer).
+
+---
+
+## 📝 Formulário de Registro
+
+<div align="center">
+  <img src="#" width="700px" alt="Formulário de Registro">
+</div>
+
+<br>
+
+Usuário preenche [...]  A tarefa é adicionada automaticamente à fileira correspondente.
+
+---
+
+## 📋 Exemplo de Fileira – Escola
+
+<div align="center">
+   <img src="#" width="700px" alt="Fileira Escola">
+</div>
+
+<br>
+
+As tarefas categorizadas como "Escola" são exibidas aqui. Cada tarefa é mostrada em um card com detalhes rápidos.
+
+---
+
+## 📱 Responsividade
+
+<div align="center">
+  <img src="#" width="300px" alt="Versão Mobile">
+</div>
+
+<br>
+
+O layout se adapta para diferentes tamanhos de tela, garantindo acessibilidade e usabilidade em dispositivos móveis.
+
+---
+
+## 🎨 Detalhes de Estilo
+
+- **Cores base:** Azul, Branco, Cinza Claro  
+- **Tipografia:** Inter, Roboto  
+- **Cards com sombra suave e cantos arredondados**  
+- **Feedback visual nas interações**
+
+---
+
+<br>
+
+<div align = center>
+  
+ ### 💖 Agradecemos pela atenção!
+  
+</div>
+
