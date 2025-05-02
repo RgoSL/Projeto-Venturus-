@@ -1,0 +1,342 @@
+/* Gradiente personalizado */
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #e5ff00;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+
+/* Container para o conteúdo */
+.containerInfo {
+  background: transparent;
+  border-radius: 30px;
+  padding: 18px;
+  border: #f38f1e solid 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  height: auto;
+  transition: all ease-in-out 0.4s !important;
+  border-radius: 30px;
+}
+
+/* Input com hover */
+.input_login:hover {
+  transform: scale(1.05);
+}
+
+/* Caixa de informações */
+.info_box {
+  border-radius: 30px;
+  background-color: #E5B972;
+}
+.info_box h4, p {
+  color: #F9F9F9;
+}
+
+.Info_texto {
+  color: white;
+  width: auto;
+}
+
+.Info_texto_p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 2%;
+  font-size: 1vw;
+}
+
+/* Botão Cadastro */
+.CadBtn {
+  border-radius: 30px;
+  background-color: #f38f1e !important;
+  color: white;
+  width: 100%;
+  transition: all ease-in-out 0.4s !important;
+  box-shadow: 0 4px 8px rgba(255, 157, 45, 0.4) !important;
+}
+
+.CadBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(255, 157, 45, 0.4) !important;
+}
+.Btn_cadastrar{
+  width: 100%; /* Garante que o botão ocupe toda a largura disponível */
+  text-align: center; /* Alinha o texto no centro */
+  padding: 10px; /* Ajuste no padding para uma boa aparência */
+  font-size: small;
+}
+/* Estilo para o input */
+.input_login {
+  width: 100%;
+  transition: all ease-in-out 0.4s !important;
+  border: rgba(71, 53, 51, 1) solid !important;
+  border-radius: 7px;
+  background-color: white !important;
+}
+
+.input_login:hover {
+  transform: scale(1.05);
+}
+
+/* Container de imagem */
+.container_imagem {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Botão de Cadastrar */
+.Btn_cadastrar {
+  width: 60%;
+  align-items: center;
+}
+
+/* Imagem com animação */
+.img_corp {
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+  transition: all ease-in-out 0.6s !important;
+  margin-left: 30%;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(20, 12, 2, 0.6) !important;
+}
+
+/* Responsividade: ajusta a coluna para telas pequenas */
+.column2 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsividade para telas menores que 768px */
+@media screen and (max-width: 965px) {
+  .img_corp{
+    margin-top:25%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 832px) {
+  .containerInfo {
+    padding: 10px;
+   width: 600px;
+   height: auto;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .info_box {
+    padding: 10px;
+  }
+
+  .input_login {
+    width: 100%;
+  }
+  .input_login:hover{
+    transform: scale(1.03);
+  }
+
+  .Btn_cadastrar {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .img_corp {
+display: none;
+  }
+
+  .column2 {
+    flex-direction: column;
+  }
+
+  /* Ajusta a fonte do texto para telas pequenas */
+  .Info_texto_p {
+    font-size: 10px;
+  }
+
+  .CadBtn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .CadBtn:hover{
+    transform: scale(1.02);
+  }
+}
+@media screen and (max-width: 768px) {
+ 
+  .containerInfo {
+    padding: 10px;
+   max-width: 450px;
+   height: auto;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .info_box {
+    padding: 10px;
+  }
+
+  .input_login {
+    width: 100%;
+  }
+  .input_login:hover{
+    transform: scale(1.03);
+  }
+
+  .Btn_cadastrar {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .img_corp {
+display: none;
+  }
+
+  .column2 {
+    flex-direction: column;
+  }
+
+  /* Ajusta a fonte do texto para telas pequenas */
+  .Info_texto_p {
+    font-size: 10px;
+  }
+
+  .CadBtn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .CadBtn:hover{
+    transform: scale(1.02);
+  }
+}
+
+/* Para telas muito pequenas, por exemplo, 480px ou menos */
+@media (max-width: 566px) {
+  .containerInfo {
+    padding: 8px;
+    width: 90%;
+    align-self: center;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .info_box {
+    padding: 8px;
+  }
+
+  .input_login {
+    font-size: 14px; /* Ajuste de font-size para telas menores */
+    padding: 5px;
+  }
+
+  .Btn_cadastrar {
+    width: 100%;
+  }
+
+  .img_corp {
+    width: 70%;
+    margin-left: 0;
+    display: none;
+  }
+
+  .column2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Info_texto_p {
+    font-size: 3.5vw;
+  }
+
+  .CadBtn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .containerInfo {
+    width: 90%;
+    margin-right: 5vh;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .info_box {
+    padding: 8px;
+  }
+
+  .input_login {
+    font-size: 14px; /* Ajuste de font-size para telas menores */
+    padding: 10px;
+  }
+
+  .Btn_cadastrar {
+    width: 100%;
+  }
+
+  .img_corp {
+    width: 70%;
+    margin-left: 0;
+    display: none;
+  }
+
+  .column2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Info_texto_p {
+    font-size: 3.5vw;
+  }
+
+  .CadBtn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .containerInfo {
+    padding: 8px;
+    width: 90%;
+  }
+  .input_login{
+    padding: 2px;
+  }
+  
+}
