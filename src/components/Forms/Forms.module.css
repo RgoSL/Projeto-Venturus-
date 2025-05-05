@@ -36,9 +36,9 @@ form {
 	display: flex;
     flex-direction: column;
 	align-items: center;
-    padding: 2rem;
+    padding: 3rem;
     justify-content: space-around;
-	border-radius: 45px 5px 45px 5px;
+	border-radius: 75px 5px 75px 5px;
 	gap: 15px;
     box-shadow: 1px 10px 39px -9px rgba(0,0,0,0.75);
     -webkit-box-shadow: 1px 10px 39px -9px rgba(0,0,0,0.75);
@@ -112,7 +112,7 @@ button:hover {
 
 
 
-@media (max-height:940px)
+@media (max-height:915px)
 {
 
 form {

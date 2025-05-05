@@ -4,20 +4,21 @@ const Forms = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const dados = {
-      nome: document.getElementById("fname").value,
-      categoria: document.getElementById("fcategoria").value,
-      descricao: document.getElementById("fdescricao").value,
-      sessao: document.getElementById("ftime").value,
-    };
+    const formData = new FormData();
+    formData.append("nome", document.getElementById("fname").value);
+    formData.append("categoria", document.getElementById("fcategoria").value);
+    formData.append("descricao", document.getElementById("fdescricao").value);
+    formData.append("sessao", document.getElementById("ftime").value);
+
+    const imagem = document.getElementById("fimagem").files[0];
+    if (imagem) {
+      formData.append("imagem", imagem);
+    }
 
     try {
       const response = await fetch("http://localhost:3001/criar-usuario", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(dados)
+        body: formData, // <- sem headers aqui
       });
 
       const resultado = await response.json();
@@ -47,6 +48,9 @@ const Forms = () => {
 
         <label htmlFor="fdescricao">Descrição</label>
         <input type="text" id="fdescricao" name="fdescricao" />
+
+        <label htmlFor="fimagem">Imagem (Opcional)</label>
+        <input type="file" id="fimagem" name="fimagem" accept="image/*" />
 
         <label htmlFor="ftime">Sessão</label>
         <select id="ftime" name="ftime">

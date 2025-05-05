@@ -69,21 +69,30 @@ const ExibirUsuarios = () => {
       {usuarios.length === 0 && <p>Nenhum usuário encontrado.</p>}
 
       <div className={style.grid}>
-        {usuarios.map((u, i) => (
-          <div key={i} className={style.card}>
-            <span className={style.nome}>{u.nome}</span>
-            <span className={`${style.categoria} ${getCategoriaClass(u.categoria)}`}>
-              {u.categoria}
-            </span>
-            <em>{u.sessao}</em>
-            <p>{u.descricao}</p>
+      {usuarios.map((u, i) => (
+  <div key={i} className={style.card}>
+    {u.imagemPath && (
+      <img
+        src={`http://localhost:3001/uploads/${u.imagemPath}`}
+        alt={`Imagem de ${u.nome}`}
+        className={style.imagem}
+      />
+    )}
 
-            <div className={style.botoes}>
-              <button onClick={() => handleEdit(u.id)}>Editar</button>
-              <button onClick={() => handleDelete(u.id)}>Excluir</button>
-            </div>
-          </div>
-        ))}
+    <span className={style.nome}>{u.nome}</span>
+    <span className={`${style.categoria} ${getCategoriaClass(u.categoria)}`}>
+      {u.categoria}
+    </span>
+    <em>{u.sessao}</em>
+    <p>{u.descricao}</p>
+
+    <div className={style.botoes}>
+      <button onClick={() => handleEdit(u.id)}>Editar</button>
+      <button onClick={() => handleDelete(u.id)}>Excluir</button>
+    </div>
+  </div>
+))}
+
       </div>
     </div>
   );
