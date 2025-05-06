@@ -27,7 +27,7 @@ textarea {
 	resize: none; /* impede redimensionamento manual */
 	border-radius: 10px;
 	transition: transform 0.3s ease-in-out;
-	color: white;
+	color: black;
 	box-shadow: 1px 10px 74px -15px rgba(0, 0, 0, 0.75);
 	text-align: left;
 	padding: 20px;
@@ -82,9 +82,10 @@ select {
 input{
 
 	width:100%;
-	background-color:var(--laranja);
-	border:none;
+	background-color:var(--preto);
+    opacity: 0.5;
 	height:3.5rem;
+    border: 1px solid var(--laranja);
 	border-radius:10px;
     transition: transform 0.3s ease-in-out;
     color:white;
