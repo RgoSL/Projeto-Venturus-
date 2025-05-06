@@ -1,0 +1,138 @@
+.footer {
+    background-color: var(--Marrom);
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo1,
+.titulo2 {
+    color: var(--Branco);
+    display: block;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.title2 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btnFooter {
+    margin-top: 15px;
+    font-family: 'Poppins';
+    color: var(--Branco);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--Laranja);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 1.0);
+    transition: 0.3s ease;
+}
+
+.btnFooter:hover{
+    background-color: #d46e08;
+    transform: scale(1.1);
+}
+
+.columns {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.brand, .faq, .social {
+    flex: 1;
+    min-width: 150px; 
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.logoFooter {
+    width: 90px;
+}
+
+
+.projectName {
+    color: var(--Laranja);
+    font-size: 40px;
+    font-weight: bold;
+}
+.Linha{
+    background-color: var(--Branco);
+    width: 100%;
+    height: 1px;
+    border-radius: 5px;
+}
+.faq,
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.faq h2,
+.social h2 {
+    color: var(--Branco);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.faq a,
+.social a {
+    color: var(--Branco);
+    text-decoration: none;
+    font-size: 14px;
+    width: 20%;
+}
+.link:hover {
+    color: var(--Laranja);
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.githubLogo {
+    width: 30px;
+    height: 30px;
+}
+.githubLogo:hover{
+    color: var(--Laranja);
+}
+
+.copy {
+    width: 100%;
+    height: 50px;
+    background-color: var(--Laranja);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textCopy {
+    font-weight: bold;
+    color: var(--Branco);
+}

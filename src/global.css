@@ -1,0 +1,18 @@
+:root{
+    --Marrom:#473533;
+    --Laranja:#DE8A27;
+    --Amarelo:#E5B972;
+    --Branco:#F9F9F9;
+    --Preto:#000;
+}
+
+body{
+    background-color: var(--Branco);
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }

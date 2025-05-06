@@ -1,0 +1,74 @@
+.ComentariosSec{
+    width: 100%;
+    height: auto;
+
+}
+
+.Titulo{
+    max-width: 40rem;
+    text-align:left;
+    font-size: 30px;
+    margin-left: 250px;
+    margin-top: 9.450rem;
+    font-weight: bold;
+    color: var(--Marrom);
+    opacity: rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins';
+
+}
+.IconeCitar {
+    width: 50px;
+    height: auto;
+}
+.Comentario1,
+.Comentario2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 40rem;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 1.2rem; 
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+.Comentario1:hover,
+.Comentario2:hover{
+    transform: scale(1.1);
+}
+.Comentario1{
+    margin-left: 250px;
+}
+
+.Comentario2{
+    margin-left: 990px;
+}
+.LinhaTexto {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+.TextoPrincipal{
+    font-size: 20px;
+    margin: 10px 0 2px;
+    font-family: 'Poppins';
+    font-style: italic;
+
+}
+
+.Autor {
+    color: var(--Laranja);
+    margin-left: 60px;
+    font-family: 'Poppins';
+  }
+  
+  .Cargo {
+    color: var(--Laranja);
+    font-size: 14px;
+    margin-left: 60px;
+    font-family: 'Poppins';
+
+  }
