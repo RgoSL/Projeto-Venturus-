@@ -51,22 +51,22 @@ const SobreNos = () => {
           <div style={{ margin: '1rem', textAlign: 'center', flex: '1 1 150px' }}>
             <img src={Rodrigo} alt="Rodrigo" style={{ width: '150px', height: '150px', borderRadius: '50%' }} />
             <h4 style={{ color: '#000', margin: '0.5rem 0' }}>Rodrigo</h4>
-            <p style={{ color: '#666', margin: 0 }}>CEO</p>
+            <p style={{ color: '#666', margin: 0 }}>Desenvolvedor</p>
           </div>
           <div style={{ margin: '1rem', textAlign: 'center', flex: '1 1 150px' }}>
             <img src={Joao} alt="João" style={{ width: '150px', height: '150px', borderRadius: '50%' }} />
             <h4 style={{ color: '#000', margin: '0.5rem 0' }}>João</h4>
-            <p style={{ color: '#666', margin: 0 }}>Co-Founder</p>
+            <p style={{ color: '#666', margin: 0 }}>Desenvolvedor</p>
           </div>
           <div style={{ margin: '1rem', textAlign: 'center', flex: '1 1 150px' }}>
             <img src={Felipe} alt="Felipe" style={{ width: '150px', height: '150px', borderRadius: '50%' }} />
             <h4 style={{ color: '#000', margin: '0.5rem 0' }}>Felipe</h4>
-            <p style={{ color: '#666', margin: 0 }}>Senior Developer</p>
+            <p style={{ color: '#666', margin: 0 }}>Desenvolvedor</p>
           </div>
           <div style={{ margin: '1rem', textAlign: 'center', flex: '1 1 150px' }}>
             <img src={EnzoCostaPaz} alt="Enzo" style={{ width: '150px', height: '150px', borderRadius: '50%' }} />
             <h4 style={{ color: '#000', margin: '0.5rem 0' }}>Enzo</h4>
-            <p style={{ color: '#666', margin: 0 }}>Senior Designer</p>
+            <p style={{ color: '#666', margin: 0 }}>Desenvolvedor </p>
           </div>
         </div>
       </section>
