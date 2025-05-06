@@ -1,0 +1,92 @@
+import React, { useState } from 'react';
+import InputField from './InputField';
+import ActionButton from './ActionButton';
+import { useNavigate } from "react-router-dom";
+
+function CadastroForm() {
+  const navigate = useNavigate();
+
+  const [form, setForm] = useState({
+    nome: '',
+    email: '',
+    senha: '',
+    dataNascimento: ''
+  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const cadastroData = { ...form };
+
+    try {
+      const response = await fetch("http://localhost:5000/cadastro", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(cadastroData)
+      });
+
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.message || 'Erro ao cadastrar');
+
+      if (data.token) {
+        localStorage.setItem("token", data.token);
+        alert("Cadastro realizado com sucesso!");
+        navigate("/Login");
+      } else {
+        alert("Erro ao cadastrar: " + (data.message || "Sem mensagem"));
+      }
+    } catch (err) {
+      alert("Erro ao cadastrar: " + err.message);
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <InputField
+        label="Seu Nome"
+        type="text"
+        name="nome"
+        value={form.nome}
+        onChange={handleChange}
+        autoComplete="off"
+      />
+      <InputField
+        label="Fulano@gmail.com"
+        type="email"
+        name="email"
+        value={form.email}
+        onChange={handleChange}
+        autoComplete="email"
+      />
+      <InputField
+        label="Data de Nascimento"
+        type="date"
+        name="dataNascimento"
+        value={form.dataNascimento}
+        onChange={handleChange}
+      />
+      <InputField
+        label="Sua senha"
+        type="password"
+        name="senha"
+        value={form.senha}
+        onChange={handleChange}
+        autoComplete="new-password"
+      />
+      <div className="text-center pt-1 mb-5 pb-1">
+        <ActionButton label="Cadastrar" className="CadBtn" />
+      </div>
+    </form>
+  );
+}
+
+export default CadastroForm;
