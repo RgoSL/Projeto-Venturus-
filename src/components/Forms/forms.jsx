@@ -10,11 +10,6 @@ const Forms = () => {
     formData.append("descricao", document.getElementById("fdescricao").value);
     formData.append("sessao", document.getElementById("ftime").value);
 
-    const imagem = document.getElementById("fimagem").files[0];
-    if (imagem) {
-      formData.append("imagem", imagem);
-    }
-
     try {
       const response = await fetch("http://localhost:3001/criar-usuario", {
         method: "POST",
@@ -47,10 +42,7 @@ const Forms = () => {
         </select>
 
         <label htmlFor="fdescricao">Descrição</label>
-        <input type="text" id="fdescricao" name="fdescricao" />
-
-        <label htmlFor="fimagem">Imagem (Opcional)</label>
-        <input type="file" id="fimagem" name="fimagem" accept="image/*" />
+        <textarea id="fdescricao" name="fdescricao" rows="4" cols="50"></textarea>
 
         <label htmlFor="ftime">Sessão</label>
         <select id="ftime" name="ftime">
@@ -67,3 +59,4 @@ const Forms = () => {
 };
 
 export { Forms };
+    

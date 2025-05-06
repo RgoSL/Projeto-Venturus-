@@ -1,8 +1,8 @@
 :root {
-
-	--laranja:#DE8A27;
-	--marrom:#473533;
-	--laranja-claro:#E5B972;
+    --preto:#000000;
+    --marrom:#000000;
+    --laranja-claro:#E5B972;
+    --laranja:#DE8A27;
 }
 *{
 	padding:0;
@@ -10,17 +10,31 @@
 	box-sizing:border-box;
 }
 body {
-	background-color:var(--laranja-claro) !important;
 	height:100dvh;
 	max-width:100%;
 }
 
 
-body,h1,input,text-area{
+body,h1,input,textarea{
 
 	font-family:sans-serif;
 
 }
+textarea {
+	width: 100%;
+    border: none;
+	height: 6rem; /* altura fixa */
+	resize: none; /* impede redimensionamento manual */
+	border-radius: 10px;
+	transition: transform 0.3s ease-in-out;
+	color: white;
+	box-shadow: 1px 10px 74px -15px rgba(0, 0, 0, 0.75);
+	text-align: left;
+	padding: 20px;
+	font-family: sans-serif;
+}
+
+
 .f_container {
 	width:100%;
 	display:flex;
@@ -30,9 +44,9 @@ body,h1,input,text-area{
 	height:100dvh;
 }
 form {
-	width: 25%;
-	height: 80%;
-    background-color: var(--laranja);
+	width: 45;
+	height: 50;
+    background-color:white;
 	display: flex;
     flex-direction: column;
 	align-items: center;
@@ -50,13 +64,12 @@ form label {
     align-self: flex-start;
     margin-bottom: -10px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 select {
 	width: 100%;
-	background-color: var(--marrom);
-	opacity: 0.8;
+	background-color: black;
 	border: none;
 	height: 2.5rem;
 	border-radius: 8px;
@@ -69,8 +82,7 @@ select {
 input{
 
 	width:100%;
-	background-color:var(--marrom) ;
-	opacity:0.5;
+	background-color:var(--laranja);
 	border:none;
 	height:3.5rem;
 	border-radius:10px;
@@ -96,7 +108,7 @@ input:focus {
 button {
 	width: 100%;
 	height: 3rem;
-	background-color: var(--marrom);
+	background-color: black;
 	color: white;
 	border: none;
 	border-radius: 8px;
@@ -118,8 +130,7 @@ button:hover {
 form {
     width: 75%;
     height: 60%;
-    background-color: var(--laranja);
-    display: flex;
+      display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
