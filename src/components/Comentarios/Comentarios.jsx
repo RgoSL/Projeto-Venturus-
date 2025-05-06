@@ -2,6 +2,7 @@ import style from './Comentarios.module.css'
 
 function Comentarios() {
     return (
+        <>
         <section className={style.ComentariosSec}>
             <div className={style.Titulo}>
                 <span>Veja sobre oque nossos clientes acham do Tarefão</span>
@@ -30,6 +31,7 @@ function Comentarios() {
                 <p className={style.Cargo}>Estudante de Tecnologia</p>
             </div>
         </section>
+        </>
     )
 }
 export { Comentarios };

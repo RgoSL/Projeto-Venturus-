@@ -52,7 +52,7 @@
   position: relative;
 }
 
-.navItem::after{
+.navItem::after {
   content: '';
   position: absolute;
   width: 0;
@@ -64,7 +64,7 @@
   transition: width 0.3s ease;
 }
 
-.navItem:hover::after{
+.navItem:hover::after {
   width: 70%;
 }
 
@@ -78,7 +78,8 @@
   position: relative;
   transition: transform 0.3s ease
 }
-.login:hover{
+
+.login:hover {
   transform: scale(1.2);
 }
 
@@ -87,12 +88,12 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   justify-content: center;
   flex-grow: 1;
   color: var(--Branco);
-  text-align: left; 
-  margin: 0 ,40px;
+  text-align: left;
+  margin: 0, 40px;
   box-sizing: border-box;
 
 }
@@ -111,7 +112,7 @@
   margin-left: 90px;
 }
 
-.Logo{
+.Logo {
   width: 50px;
   height: 55px;
   position: absolute;
@@ -119,6 +120,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
 .BtnRegistro {
   font-family: 'Poppins';
   color: var(--Branco);
@@ -131,13 +133,71 @@
   margin-top: 10px;
   margin-left: 90px;
   cursor: pointer;
-  box-shadow:3px 3px 3px rgba(0, 0, 0, 1.0);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 1.0);
   transition: 0.5s ease;
 }
+
 .BtnRegistro:hover {
   background-color: #d46e08;
   transform: scale(1.1);
 }
+
 button:hover img {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .navImage {
+    height: auto;
+    padding-bottom: 20px;
+    background-position: center;
+  }
+
+  .NavBack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .linkGroup {
+    display: flex;
+    gap: 40px;
+  }
+
+  .loginGroup {
+    margin-top: 10px;
+  }
+
+  .Logo {
+    position: static;
+    transform: none;
+    width: 40px;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .navItem,
+  .login {
+    font-size: 18px;
+    left: 0;
+  }
+
+  .Content {
+    align-items: center;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .Titulo,
+  .Titulo2 {
+    font-size: 28px;
+    margin-left: 0;
+  }
+
+  .BtnRegistro {
+    margin-left: 0;
+    padding: 12px 30px;
+    font-size: 18px;
+  }
 }

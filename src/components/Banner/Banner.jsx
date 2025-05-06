@@ -6,11 +6,17 @@ function Banner() {
             <header className={style.navImage}>
                 <nav className={style.nav}>
                     <div className={style.NavBack}>
-                        <img src="/Imagens/LogoFinal.png" alt="Logo do projeto" className={style.Logo}/>
-                        <a className={style.navItem} href="#opinioes">Opiniões</a>
-                        <a className={style.navItem} href="#vantagens">Vantagens</a>
-                        <a className={style.navItem} href="#equipe">Equipe</a>
-                        <a className={style.login} href="#login">Login</a>
+                        <img src="/Imagens/LogoFinal.png" alt="Logo do projeto" className={style.Logo} />
+
+                        <div className={style.linkGroup}>
+                            <a className={style.navItem} href="#opinioes">Opiniões</a>
+                            <a className={style.navItem} href="#vantagens">Vantagens</a>
+                            <a className={style.navItem} href="#equipe">Equipe</a>
+                        </div>
+
+                        <div className={style.loginGroup}>
+                            <a className={style.login} href="#login">Login</a>
+                        </div>
                     </div>
                 </nav>
                 <div className={style.Content}>

@@ -55,3 +55,38 @@
     width: 45px;
     height: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .Titulo {
+        font-size: 22px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .VantagensContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .Qualidade {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .TituloVantagem {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ConteudoVantagem {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .Icone {
+        width: 30px;
+    }
+}

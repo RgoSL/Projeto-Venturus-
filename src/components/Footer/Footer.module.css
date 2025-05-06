@@ -136,3 +136,63 @@
     font-weight: bold;
     color: var(--Branco);
 }
+@media screen and (max-width: 768px) {
+    .content {
+      padding: 20px 15px;
+    }
+  
+    .titulo1,
+    .titulo2 {
+      font-size: 16px;
+    }
+  
+    .btnFooter {
+      font-size: 16px;
+      padding: 10px 25px;
+    }
+  
+    .columns {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+  
+    .brand,
+    .faq,
+    .social {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .projectName {
+      font-size: 32px;
+    }
+  
+    .faq a,
+    .social a {
+      width: auto;
+      font-size: 14px;
+    }
+  
+    .faq h2,
+    .social h2 {
+      font-size: 16px;
+    }
+  
+    .githubLogo {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .copy {
+      height: auto;
+      padding: 10px 0;
+    }
+  
+    .textCopy {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  

@@ -72,3 +72,50 @@
     font-family: 'Poppins';
 
   }
+
+  
+
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .Comentario1,
+    .Comentario2 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .Titulo {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .Titulo {
+      margin: 2rem auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  
+    .Comentario1,
+    .Comentario2 {
+      margin: 20px auto;
+      width: 90%;
+      padding: 15px;
+      font-size: 1rem;
+    }
+  
+    .TextoPrincipal {
+      font-size: 1rem;
+    }
+  
+    .Autor,
+    .Cargo {
+      margin-left: 20px;
+      font-size: 0.9rem;
+    }
+  
+    .IconeCitar {
+      width: 30px;
+    }
+  }
+  
