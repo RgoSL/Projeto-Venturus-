@@ -2,7 +2,6 @@
 Para mais informações sobre a Biblioteca Vanilla-Tilt, a página https://micku7zu.github.io/vanilla-tilt.js/  pode ser consultada.
 */
 
-
 import { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
 

@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const chaveSecreta = process.env.SECRET_KEY;
+const chaveSecreta = process.env.JWT_SECRET;
 
 // Função para carregar os usuários do arquivo JSON
 const carregarUsuarios = () => {
@@ -20,9 +20,12 @@ const carregarUsuarios = () => {
 };
 
 // Função para salvar os usuários no arquivo JSON
+// Função para salvar os usuários no arquivo JSON
 const salvarUsuarios = (usuarios) => {
-  fs.writeFileSync('users.json', JSON.stringify(usuarios, null, 2), 'utf8');
+  const db = { usuarios };  // Cria o objeto com a chave "usuarios"
+  fs.writeFileSync('banco.json', JSON.stringify(db, null, 2), 'utf8');  // Salva o objeto db no arquivo JSON
 };
+
 
 app.use(cors({
   origin: 'http://localhost:5173',
@@ -58,6 +61,7 @@ app.post('/login', (req, res) => {
   res.json({ token });
 });
 
+// Rota de cadastro
 // Rota de cadastro
 app.post('/cadastro', async (req, res) => {
    console.log("Requisição de cadastro recebida!");
