@@ -15,16 +15,15 @@ body {
 }
 
 
-body,h1,input,textarea{
+body,h1,input,textarea,select{
 
 	font-family:sans-serif;
-
+	border:1.5px solid var(--laranja);
 }
 textarea {
 	width: 100%;
-    border: none;
-	height: 6rem; /* altura fixa */
-	resize: none; /* impede redimensionamento manual */
+    	height: 6rem;
+	resize: none;
 	border-radius: 10px;
 	transition: transform 0.3s ease-in-out;
 	color: black;
@@ -44,8 +43,8 @@ textarea {
 	height:100dvh;
 }
 form {
-	width: 45;
-	height: 50;
+	width: 25%;
+	height: 70%;
     background-color:white;
 	display: flex;
     flex-direction: column;
@@ -70,7 +69,7 @@ form label {
 select {
 	width: 100%;
 	background-color: black;
-	border: none;
+
 	height: 2.5rem;
 	border-radius: 8px;
 	padding: 0 10px;
@@ -85,7 +84,7 @@ input{
 	background-color:var(--preto);
     opacity: 0.5;
 	height:3.5rem;
-    border: 1px solid var(--laranja);
+    
 	border-radius:10px;
     transition: transform 0.3s ease-in-out;
     color:white;
@@ -99,11 +98,25 @@ input:hover {
     transform:scale(1.02);
 }
 input:focus {
-    transform: scale(1.1);
+    transform: scale(1.08);
     outline: none;
     box-shadow: 1px 10px 39px -6px rgba(0,0,0,0.75);
     -webkit-box-shadow: 1px 10px 39px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 10px 39px -6px rgba(0,0,0,0.75);
+}
+
+textarea:hover{
+	transform:scale(1.02);
+}
+textarea:focus{
+
+	transform:scale(1.04);
+	outline:none;
+	border:1.5px solid var(--laranja);
+	box-shadow:1px 10px 39px -6px rgba(0,0,0,0.75);
+	-webkit-box-shadow:1px 10px 39px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow:1px 10px 39px -6px rgba(0,0,0,0.75);
+
 }
 
 button {
@@ -119,7 +132,7 @@ button {
 }
 
 button:hover {
-	background-color: #5a403d;
+	background-color: var(--laranja);
 }
 
 

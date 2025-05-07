@@ -1,7 +1,7 @@
     import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
     import { Forms } from "./components/Forms/forms.jsx";
     import ExibirUsuarios from "./pages/ExibirCards/ExibirUsuarios.jsx";
-    import { SobreNos } from "./components/Sobrenos/SobreNos.jsx";
+    import { SobreNos } from "./components/SobreNos/SobreNos.jsx";
     function App() {
     return (
         <Router>
