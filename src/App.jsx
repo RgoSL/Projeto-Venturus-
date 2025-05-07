@@ -1,17 +1,15 @@
 import React from "react";
-import {Banner, Vantagens, Comentarios, SobreNos} from './pages/Home/components'
-import { Footer} from './components/Footer'
+import { BrowserRouter } from 'react-router-dom';
+import {RoutesComponent} from './hooks/routes';
 
 const App = () => {
   return (
    <>
-   <Banner />
-   <Comentarios />
-   <Vantagens />
-   <SobreNos />
-   <Footer />
+   <BrowserRouter>
+    <RoutesComponent />
+   </BrowserRouter>
    </>
   );
 };
 
-export default App
+export {App};

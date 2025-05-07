@@ -1,5 +1,5 @@
 import React from 'react';
-import CadastroLayout from './CadastroLayout';
+import {CadastroLayout} from './components/Layout/Layout';
 
 function Cadastro() {
   return <CadastroLayout />;

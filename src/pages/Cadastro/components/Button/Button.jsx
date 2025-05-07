@@ -9,4 +9,4 @@ function ActionButton({ label, onClick, className }) {
   );
 }
 
-export default ActionButton;
+export {ActionButton};

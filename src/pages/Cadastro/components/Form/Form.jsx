@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import InputField from './InputField';
-import ActionButton from './ActionButton';
+import {CampoTexto} from '../CampoTexto/CampoTexto';
+import { ActionButton } from '../Button/Button'; 
 import { useNavigate } from "react-router-dom";
 
 function CadastroForm() {
@@ -51,7 +51,7 @@ function CadastroForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <InputField
+      <CampoTexto
         label="Seu Nome"
         type="text"
         name="nome"
@@ -59,7 +59,7 @@ function CadastroForm() {
         onChange={handleChange}
         autoComplete="off"
       />
-      <InputField
+      <CampoTexto
         label="Fulano@gmail.com"
         type="email"
         name="email"
@@ -67,14 +67,14 @@ function CadastroForm() {
         onChange={handleChange}
         autoComplete="email"
       />
-      <InputField
+      <CampoTexto
         label="Data de Nascimento"
         type="date"
         name="dataNascimento"
         value={form.dataNascimento}
         onChange={handleChange}
       />
-      <InputField
+      <CampoTexto
         label="Sua senha"
         type="password"
         name="senha"
@@ -89,4 +89,4 @@ function CadastroForm() {
   );
 }
 
-export default CadastroForm;
+export {CadastroForm};
