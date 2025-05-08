@@ -83,6 +83,12 @@
   transform: scale(1.2);
 }
 
+.linkGroup {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
 .Content {
   position: relative;
   z-index: 1;
